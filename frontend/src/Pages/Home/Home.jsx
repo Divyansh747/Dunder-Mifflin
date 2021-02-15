@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../../Components/Shared/Navbar';
+import Navbar from '../../Components/Shared/BeforeLoginNavbar';
 import LoginPage from '../Auth/LoginPage';
 import SignupPage from '../Auth/SignupPage';
 

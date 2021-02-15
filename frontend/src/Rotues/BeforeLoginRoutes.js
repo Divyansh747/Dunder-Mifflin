@@ -3,7 +3,7 @@ import Home from '../Pages/Home/Home' ;
 import LoginPage from '../Pages/Auth/LoginPage' ;
 import SignupPage from '../Pages/Auth/SignupPage' ;
 
-const Routes = () => {
+const BeforeLoginRoutes = () => {
     return(
         <Switch>
             <Route exact path="/" component={Home} />
@@ -13,4 +13,4 @@ const Routes = () => {
     ) ;
 }
 
-export default Routes ;
+export default BeforeLoginRoutes ;
