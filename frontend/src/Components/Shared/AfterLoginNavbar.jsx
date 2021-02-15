@@ -3,6 +3,7 @@ import { NavLink, BrowserRouter } from 'react-router-dom';
 import "./Styles/Navbar.css";
 
 const Navbar = () => {
+    
     return (
         <nav className="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
             <div className="container">
@@ -12,9 +13,9 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarToggle">
                     <div className="navbar-nav">
-                        <NavLink className="nav-item nav-link" to="/">Home</NavLink>
-                        <NavLink className="nav-item nav-link" to="/login">Login</NavLink>
-                        <NavLink className="nav-item nav-link" to="/signup">Register</NavLink>
+                        <NavLink className="nav-item nav-link" to="/">Dashboard</NavLink>
+                        <NavLink className="nav-item nav-link" to="/generate/request">Create Hire Request</NavLink>
+                        {/* We can use avatar here */}
                     </div>
                 </div>
             </div>

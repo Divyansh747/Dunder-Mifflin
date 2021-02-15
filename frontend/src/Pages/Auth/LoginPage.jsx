@@ -30,7 +30,7 @@ const LoginPage = () => {
             <form className='login-form '>
 
                 <h3>Log in as <span style={{ color: "#5f788a" }}>{user}</span></h3>
-                <p className='text-muted'>*Admin as default</p>
+                <p className='text-muted'>*Student as default</p>
 
                 <div className="form-group">
                     <input type="email" name='emailId' className="form-control" placeholder="Enter email" onChange={handleChange} />
