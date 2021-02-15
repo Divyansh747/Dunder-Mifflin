@@ -22,6 +22,7 @@ public class UserController {
 	@Autowired
 	RegistrationService registrationService;
 
+	@Autowired
 	RegistrationOrgService registrationOrgService;
 	
 	@RequestMapping("/userlogin")
@@ -47,5 +48,10 @@ public class UserController {
 	@PostMapping("/orgRegistration")
 	public ResponseEntity<?> createOrg(@Valid @RequestBody RegistrationOrgEntity registrationRequest) throws Exception {
 		return ResponseEntity.ok(registrationOrgService.createOrg(registrationRequest));
+	}
+	
+	@GetMapping("/orgRegistration")
+	public ResponseEntity<?> getAllOrg() throws Exception {
+		return ResponseEntity.ok(registrationOrgService.findAllOrg());
 	}
 }

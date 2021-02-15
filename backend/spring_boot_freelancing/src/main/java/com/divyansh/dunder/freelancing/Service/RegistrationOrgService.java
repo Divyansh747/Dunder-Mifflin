@@ -1,5 +1,6 @@
 package com.divyansh.dunder.freelancing.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ public class RegistrationOrgService {
 	}
 	
 	public Optional<RegistrationOrgEntity> createOrg(RegistrationOrgEntity registrationRequest) throws Exception {
-
+		System.out.println("### ORG  ###: "+registrationRequest.getOrgEmail());
 		if (registrationOrgRepository.existsByOrgEmail(registrationRequest.getOrgEmail())) {
 			throw new Exception("Email Already Exists!");
 		}
@@ -31,5 +32,10 @@ public class RegistrationOrgService {
 				.save(new RegistrationOrgEntity(registrationRequest.getOrgEmail(), registrationRequest.getOrgName(), registrationRequest.getOrgContact(), registrationRequest.getOrgPassword()));
 
 		return Optional.ofNullable(registrationOrgEntity);
+	}
+	
+
+	public List<RegistrationOrgEntity> findAllOrg() {
+		return registrationOrgRepository.findAll(); 
 	}
 }

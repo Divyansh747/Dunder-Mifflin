@@ -41,4 +41,5 @@ public class RegistrationService {
 	public List<RegistrationEntity> findAll() {
 		return registrationRepository.findAll(); 
 	}
+	
 }
