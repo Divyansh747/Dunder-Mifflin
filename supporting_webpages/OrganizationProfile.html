@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
+        <title>DUNDER MIFFLIN FREELANCIA</title>
+</head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">DUNDER MIFFLIN FREELANCIA</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
+              <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
+              <a class="nav-item nav-link" href="{% url 'blog-home' %}">Employee Review & Feedback</a>
+              <a class="nav-item nav-link" href="{% url 'blog-home' %}">Employee Payment</a>
+
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8">
+
+
+        </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <!-- main -->
+    <div class="main-w3layouts wrapper">
+       <br>
+        <br>
+      <h1><b>ORGANIZATION PROFILE<b></h1>
+      <br>
+      <h1>POST A PROJECT:</h1>
+        <div class="main-agileinfo">
+            <div class="agileits-top">
+                <form action="#" method="post">
+
+
+            <input class="text" type="text" name="Organization Name" placeholder="Project Name" required=""><br>
+
+            <input class="text" type="text" name="Orgname" placeholder="Assigning Organization's Name" required=""><br>
+
+            <input class="text" type="text" name="Projdesc" placeholder="Project Description" required=""> <br>
+
+            <input class="text" type="text" name="ProjDur" placeholder="Project Duration / Deadline " required=""><br>
+
+            <input class="text" type="text" name="ProjPay" placeholder="What the Job Pays? " required=""><br>
+
+          <br>
+    <p><b>Core Skill Requirement:</b></p>
+
+          <div class="wthree-text">
+                        <label class="anim">
+                          <input type="checkbox" class="checkbox" required="">
+                            <span>Front-End</span>
+           <input type="checkbox" class="checkbox" required="">
+                            <span>Back-End</span>
+           <input type="checkbox" class="checkbox" required="">
+                            <span>Machine-Learning</span>
+           <input type="checkbox" class="checkbox" required="">
+                            <span>Android</span>
+           <input type="checkbox" class="checkbox" required="">
+                            <span>iOS</span>
+           <input type="checkbox" class="checkbox" required="">
+                            <span>Automation</span>
+           <input type="checkbox" class="checkbox" required="">
+                            <span>Blockchain</span>
+             <br>
+                        <div class="clear"> </div>
+                    </div>
+                    <input type="submit" value="POST">
+                </form>
+
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="colorlibcopy-agile">
+            <p>© 2021 Dunder Mifflin. All rights reserved.</p>
+        </div>
+
+</body>
+</html>
+

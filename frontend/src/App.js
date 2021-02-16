@@ -24,10 +24,10 @@ function App() {
 
     <div className="App container">
       {
-        !authState?.isAuthenticated ? <AfterLoginNavbar/> : <BeforeLoginNavbar/>
+        authState?.isAuthenticated ? <AfterLoginNavbar/> : <BeforeLoginNavbar/>
       }
       {
-        authState?.isAuthenticated ? <BeforeLoginRoutes /> : <AfterLoginRoutes />
+        !authState?.isAuthenticated ? <BeforeLoginRoutes /> : <AfterLoginRoutes />
       }
     </div>
 
