@@ -15,6 +15,7 @@ const Navbar = () => {
                     <div className="navbar-nav">
                         <NavLink className="nav-item nav-link" to="/">Dashboard</NavLink>
                         <NavLink className="nav-item nav-link" to="/generate/request">Create Hire Request</NavLink>
+                        <NavLink className="nav-item nav-link" to="/generate/request">Logout</NavLink>
                         {/* We can use avatar here */}
                     </div>
                 </div>
